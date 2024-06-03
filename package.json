@@ -1,0 +1,19 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "description": "Your project description",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss src/input.css -o src/output.css",
+    "watch:css": "nodemon --watch src --ext css,html --exec \"npm run build:css\""
+  },
+  "dependencies": {
+    "tailwindcss": "^3.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.0",
+    "nodemon": "^3.1.2",
+    "postcss": "^8.0.0",
+    "postcss-cli": "^11.0.0"
+  }
+}

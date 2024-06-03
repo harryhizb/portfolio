@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Style for Testing */
+.custom-test {
+  @apply text-red-500 font-bold;
+}

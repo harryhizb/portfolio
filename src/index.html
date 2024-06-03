@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+    </style>
+</head>
+
+<body class="h-screen font-Nunito">
+    <!-- Main Hero Section -->
+    <div class="h-1/2 sm:h-screen bg-gradient-to-t from-indigo-200 flex items-center justify-center relative">
+        <!-- Navigation -->
+        <nav class="w-full fixed top-0 bg-white z-30">
+            <div class="container mx-auto py-5 flex justify-between items-center px-4">
+                <div class="flex items-center gap-1">
+                    <img class="w-8" src="/src/images/logo.png" alt="Logo">
+                    <span class="font-bold text-2xl text-indigo-900">reporteq</span>
+                </div>
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex space-x-10 text-gray-600 font-bold">
+                    <li class="hover:text-gray-400"><a href="#home">Home</a></li>
+                    <li class="hover:text-gray-400"><a href="#about us">About us</a></li>
+                    <li class="hover:text-gray-400"><a href="#work">Works</a></li>
+                    <li class="hover:text-gray-400"><a href="#services">Services</a></li>
+                    <li class="hover:text-gray-400"><a href="#contacts">Contacts</a></li>
+                </ul>
+                <!-- Mobile Menu Toggle -->
+                <div class="md:hidden z-20">
+                    <div id="hamburger" class="fa-solid fa-bars px-2 text-2xl"></div>
+                </div>
+                <!-- Mobile Menu -->
+                <ul id="menu" class="hidden bg-indigo-900 absolute top-0 left-0 w-full p-10 rounded-b-3xl space-y-4 text-white text-center">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about us">About us</a></li>
+                    <li><a href="#work">Works</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Intro Content -->
+        <div class="absolute left-6 text-2xl font-bold md:text-4xl md:left-20 lg:text-6xl lg:left-44" id="home">
+            <span class="text-gray-600">Freelance</span>
+            <p id="text" class="text-red-500">designer</p>
+        </div>
+        <!-- Hero Image -->
+        <img class="absolute bottom-0 md:left-0 -right-4 mx-auto h-5/6 object-cover" src="/src/images/hero1.png" alt="Hero Image">
+        <!-- Call to Action Box -->
+        <div class="hidden lg:flex flex-col gap-5 top-0 bottom-0 rounded-md shadow-lg absolute m-auto right-10 bg-white p-6 h-64 w-1/3">
+            <h3 class="text-4xl font-bold text-indigo-900">Hi, I'm Hizbu</h3>
+            <p class="text-gray-500">With over 10 years of experience in technology. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel eligendi enim earum optio adipisci iure laudantium corrupti, inventore omnis vitae!</p>
+            <a class="bg-indigo-900 text-white text-xl w-1/4 px-3 py-2 rounded-md font-semibold" href="#contacts">Hire me</a>
+        </div>
+    </div>
+
+   <!-- About Section -->
+<div class="px-5 lg:px-10" id="about us">
+    <div class="container mx-auto py-20 flex flex-col-reverse lg:flex-row items-center gap-5 lg:justify-center">
+        <div class="relative w-full lg:w-1/2 flex  lg:justify-center">
+            <!-- Dots Image -->
+            <img class="h-40 lg:h-1/4 absolute left-20 top-0 z-0" src="/src/images/dots.png" alt="Dots">
+            <!-- Hero Image Container -->
+            <div class="relative h-60 w-full sm:h-60 sm:w-full lg:h-full lg:w-96 overflow-hidden z-10 lg:mr-5">
+                <img class="h-full w-full object-cover lg:rounded-full" src="/src/images/hero-2.png" alt="Hero Image">
+            </div>
+        </div>
+        <!-- Right Side Content -->
+        <div class="w-full lg:w-1/2 my-auto flex flex-col text-black gap-5 p-2 lg:-right-32  rounded-md">
+            <h1 class="text-indigo-600 font-medium">About Me</h1>
+            <h1 class="text-3xl font-medium">Better Design</h1>
+            <h1 class="text-3xl font-medium">Better experience</h1>
+            <p class="text-gray-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam qui odio distinctio quos omnis at quidem nostrum est animi quasi!</p>
+            <h1 class="text-gray-400 font-medium">HTML</h1>
+            <div class="w-full bg-gray-300 h-1.5 rounded-md">
+                <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+            </div>
+            <h1 class="text-gray-400 font-medium">JAVASCRIPT</h1>
+            <div class="w-full bg-gray-300 h-1.5 rounded-md">
+                <div class="w-3/4 bg-indigo-600 h-1.5 rounded-md"></div>
+            </div>
+            <h1 class="text-gray-400 font-medium">NODE JS</h1>
+            <div class="w-full bg-gray-300 h-1.5 rounded-md">
+                <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Services Section -->
+    <div class="px-5 lg:px-10 py-5" id="services">
+        <div class="container mx-auto">
+            <div class="flex flex-col items-center gap-3">
+                <h1 class="text-indigo-600 font-medium">SERVICES</h1>
+                <h4 class="text-3xl font-bold">What do I offer</h4>
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, dolorem?</p>
+            </div>
+            <!-- Services Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+                <!-- Card -->
+                <div class="shadow-xl rounded-md flex flex-col p-5 gap-3">
+                    <img class="w-10" src="/src/images/icon.png" alt="Icon">
+                    <h1 class="font-medium">UX / UI Design</h1>
+                    <p class="text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ab.</p>
+                    <a class="text-indigo-600 font-semibold text-sm" href="#">Read more</a>
+                </div>
+                <!-- Card -->
+                <div class="shadow-xl rounded-md flex flex-col p-5 gap-3">
+                    <img class="w-10" src="/src/images/icon.png" alt="Icon">
+                    <h1 class="font-medium">Web Development</h1>
+                    <p class="text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ab.</p>
+                    <a class="text-indigo-600 font-semibold text-sm" href="#">Read more</a>
+                </div>
+                <!-- Card -->
+                <div class="shadow-xl rounded-md flex flex-col p-5 gap-3">
+                    <img class="w-10" src="/src/images/icon.png" alt="Icon">
+                    <h1 class="font-medium">Graphic Design</h1>
+                    <p class="text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ab.</p>
+                    <a class="text-indigo-600 font-semibold text-sm" href="#">Read more</a>
+                </div>
+                <!-- Card -->
+                <div class="shadow-xl rounded-md flex flex-col p-5 gap-3">
+                    <img class="w-10" src="/src/images/icon.png" alt="Icon">
+                    <h1 class="font-medium">SEO Optimization</h1>
+                    <p class="text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ab.</p>
+                    <a class="text-indigo-600 font-semibold text-sm" href="#">Read more</a>
+                </div>
+                <!-- Card -->
+                <div class="shadow-xl rounded-md flex flex-col p-5 gap-3">
+                    <img class="w-10" src="/src/images/icon.png" alt="Icon">
+                    <h1 class="font-medium">Service 5</h1>
+                    <p class="text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ab.</p>
+                    <a class="text-indigo-600 font-semibold text-sm" href="#">Read more</a>
+                </div>
+                <!-- Card -->
+                <div class="shadow-xl rounded-md flex flex-col p-5 gap-3">
+                    <img class="w-10" src="/src/images/icon.png" alt="Icon">
+                    <h1 class="font-medium">Service 6</h1>
+                    <p class="text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, ab.</p>
+                    <a class="text-indigo-600 font-semibold text-sm" href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Work Section -->
+    <div class="px-5 lg:px-10 py-20" id="work">
+        <div class="container mx-auto">
+            <div class="flex flex-col items-center gap-3">
+                <h1 class="text-indigo-600 font-medium">WORK</h1>
+                <h4 class="text-3xl font-bold">Portfolio Showcase</h4>
+                <p class="text-gray-500">Check out some of my latest work below.</p>
+            </div>
+            <!-- Portfolio Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+                <!-- Card 1 -->
+                <div class="shadow-xl rounded-md p-5">
+                    <img class="w-full lg:h-64 object-cover" src="/src/images/p4.png" alt="Work 1">
+                </div>
+                <!-- Card 2 -->
+                <div class="shadow-xl rounded-md p-5">
+                    <img class="w-full lg:h-64 object-cover" src="/src/images/p2.png" alt="Work 2">
+                </div>
+                <!-- Card 3 -->
+                <div class="shadow-xl rounded-md p-5">
+                    <img class="w-full lg:h-64 object-cover" src="/src/images/p3.png" alt="Work 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contacts Section -->
+    <div class="px-5 lg:px-10 py-20" id="contacts">
+        <div class="container mx-auto">
+            <!-- Top -->
+            <div class="flex flex-col items-center gap-3">
+                <h1 class="text-indigo-600 font-medium">CONTACTS</h1>
+                <h4 class="text-3xl font-bold">Any questions?</h4>
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, dolorem?</p>
+            </div>
+            <!-- Bottom -->
+            <form class="flex flex-col items-center mt-5 p-8 gap-3">
+                <input class="p-2 w-full lg:w-1/2 ring-1 ring-indigo-300 rounded-sm" type="text" placeholder="Name">
+                <input class="p-2 w-full lg:w-1/2 ring-1 ring-indigo-300 rounded-sm" type="email" placeholder="Email">
+                <textarea class="p-2 w-full lg:w-6/12 ring-1 ring-indigo-300 rounded-sm" cols="30" rows="15" placeholder="Message"></textarea>
+                <button class="w-1/4 bg-indigo-600 text-white px-3 py-2 cursor-pointer rounded-md hover:bg-indigo-400" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="w-full bg-gray-800 text-white">
+            <div class="container mx-auto py-5 flex justify-between items-center px-4">
+                <div class="flex items-center gap-1">
+                    <img class="w-8" src="/src/images/logo.png" alt="Logo">
+                    <span class="font-bold text-2xl text-white">reporteq</span>
+                </div>
+                <span class="hidden md:block text-white font-medium">© Wet Dog Publishing 2023</span>
+                <div class="flex gap-2">
+                    <img class="cursor-pointer w-4" src="/src/images/fb.png" alt="Facebook">
+                    <img class="cursor-pointer w-4" src="/src/images/insta.png" alt="Instagram">
+                    <img class="cursor-pointer w-4" src="/src/images/twitter.png" alt="Twitter">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="autotyping.js"></script>
+</body>
+
+</html>
